@@ -33,3 +33,7 @@ disable ssh.service
 enable sshd.socket
 enable ssh.socket
 enable sshd-keygen.service
+
+# Fedora's generic-release doesn't enable dbus-broker
+# https://src.fedoraproject.org/rpms/generic-release/pull-request/7
+enable dbus-broker.service
